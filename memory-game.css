@@ -1,0 +1,83 @@
+/* you can add to or change this. */
+* {
+  font-family:'Courier New', Courier, monospace;
+}
+
+body {
+  background: lightpink;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header {
+  cursor: default;
+}
+
+.game {
+  margin: 48px auto;
+  width: max-content;
+  display: grid;
+  grid-template-columns: repeat(5,100px);
+  gap: 16px;
+}
+
+.card {
+  height: 140px;
+  border-radius: 10px;
+  background-color: white;
+  opacity: 90%;
+  border: 3px solid black;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease-in-out;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  padding: 8px 18px;
+  font-size:  30px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color: black;
+}
+
+.actions button:hover {
+  cursor: pointer;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: default;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
